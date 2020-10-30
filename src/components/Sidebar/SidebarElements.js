@@ -36,6 +36,17 @@ export const SidebarWrapper = styled.div`
   color: #fff;
 `;
 
+export const SidebarMenu = styled.ul`
+  display: grid;
+  grid-template-columns: 1fr;
+  grid-template-rows: repeat(6, 80px);
+  text-align: center;
+
+  @media screen and (max-width: 480px) {
+    grid-template-rows: repeat(6, 60px);
+  }
+`;
+
 export const SidebarLink = styled(LinkS)`
   display: flex;
   align-items: center;
@@ -58,7 +69,7 @@ export const SideBtnWrap = styled.div`
   justify-content: center;
 `;
 
-export const SideBarRoute = styled(LinkR)`
+export const SidebarRoute = styled(LinkR)`
   border-radius: 50px;
   background: #01bf71;
   white-space: nowrap;
