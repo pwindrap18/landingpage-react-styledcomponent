@@ -1,6 +1,6 @@
-import React, { useState } from 'react';
-import Video from '../../videos/video.mp4';
-import { Button } from '../ButtonElements';
+import React, { useState } from "react";
+import Video from "../../videos/video.mp4";
+import { Button } from "../ButtonElements";
 import {
   ArrowForward,
   ArrowRight,
@@ -11,7 +11,7 @@ import {
   HeroH1,
   HeroP,
   VideoBg,
-} from './HeroElements';
+} from "./HeroElements";
 
 const HeroSection = () => {
   const [hover, setHover] = useState(false);
@@ -21,9 +21,9 @@ const HeroSection = () => {
   };
 
   return (
-    <HeroContainer>
+    <HeroContainer id="home">
       <HeroBg>
-        <VideoBg autoPlay loop muted src={Video} type='video/mp4' />
+        <VideoBg autoPlay loop muted src={Video} type="video/mp4" />
       </HeroBg>
       <HeroContent>
         <HeroH1>Virtual Banking Made Easy</HeroH1>
@@ -33,11 +33,16 @@ const HeroSection = () => {
         </HeroP>
         <HeroBtnWrapper>
           <Button
-            to='signup'
+            to="signup"
             onMouseEnter={onHover}
             onMouseLeave={onHover}
-            primary='true'
-            dark='true'
+            primary="true"
+            dark="true"
+            smooth={true}
+            duration={500}
+            spy={true}
+            exact="true"
+            offset={-80}
           >
             Get started {hover ? <ArrowForward /> : <ArrowRight />}
           </Button>

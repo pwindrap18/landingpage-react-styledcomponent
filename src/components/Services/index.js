@@ -1,8 +1,20 @@
-import React from 'react';
+import React from "react";
+import Icon1 from "../../images/svg-4.svg";
+import Icon2 from "../../images/svg-3.svg";
+import Icon3 from "../../images/svg-6.svg";
+import {
+  ServicesH1,
+  ServicesContainer,
+  ServicesWrapper,
+  ServicesCard,
+  ServicesIcon,
+  ServicesH2,
+  ServicesP,
+} from "./ServicesElements";
 
 const Services = () => {
   return (
-    <ServicesContainer id='services'>
+    <ServicesContainer id="services">
       <ServicesH1>Our Services</ServicesH1>
       <ServicesWrapper>
         <ServicesCard>
