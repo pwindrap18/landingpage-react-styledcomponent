@@ -2,6 +2,8 @@
 
 This project was bootstrapped with [Create React App](https://github.com/facebook/create-react-app).
 
+click [here](https://react-landingpage-styledcomponent.netlify.app/) to see the website
+
 ## Available Scripts
 
 In the project directory, you can run:
